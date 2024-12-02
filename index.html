@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracking dashboard main</title>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="card-principal">
+        <div class="card-header">
+          <div class="group first">
+            <img class="img-perfil" src="images/image-jeremy.png" alt="">
+          </div>
+          <div class="group second">
+            <span>Report for</span>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="date">
+            <span id="daily" onclick="changeDaily()">Daily</span>
+            <span id="weekly" onclick="changeWeekly()" class="active">Weekly</span>
+            <span id="monthly" onclick="changeMonthly()">Monthly</span>
+          </div>
+        </div>
+      </div>
+      <div id="grid" class="grid">
+        <!-- <div class="card">
+          <div class="card-header">
+            <img class="img-icon" src="images/icon-work.svg" alt="">
+          </div>
+          <div class="card-body">
+            <div class="group first">
+              <span class="title">Work</span>
+              <img src="images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="group second">
+              <span class="time">32hrs</span>
+              <span class="format">Last Week - 35hrs</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
